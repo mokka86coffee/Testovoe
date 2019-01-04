@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+<button class="openForm">Click</button>
+<section class="modal">
+    <div class="modalWrap">
+        <div class="modalForm">
+            <div class="modalForm__header">
+                <div class="header__closeElem">x</div>
+                <p>Come and say hello</p>
+                <h1>Register for an Open Day</h1>
+            </div>
+            <form class="modalForm__form">
+                <p>Open Days are the perfect opportunity to get to know us, visit our campus, see acccommodation, meet academics,
+                    and get the low-down on the Essex student life.</p>
+                <h2>Book your place</h2>
+                <div class="select">
+                    <span>I am an</span>
+                    <select>
+                        <option value="Nope">Select education</option>
+                        <option value="College 1">College 1</option>
+                        <option value="College 2">College 2</option>
+                        <option value="College 3">College 3</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <span>Campus</span>
+                    <select>
+                        <option value="Nope">Select education</option>
+                        <option value="College 1">Colchester Campus</option>
+                        <option value="College 2">Colchester Campus 2</option>
+                        <option value="College 3">Colchester Campus 3</option>
+                    </select>
+                </div>
+                <div class="select  modalForm__form__date">
+                    <span>Date*</span>
+                    <input required type="date" />
+                </div>
+                <div class="select">
+                    <input maxlength="20" id="name" required name="name" type="text" />
+                    <span><label for="name">First Name*</label> </span>
+                </div>
+                <div class="select">
+                    <input maxlength="20" id="surname" required name="surname" type="text" />
+                    <span><label for="surname">Last Name*</label> </span>
+                </div>
+                <div class="select ">
+                    <input maxlength="30" id="email" required name="email" type="email" />
+                    <span><label for="email">Email Address*</label></span>
+                </div>
+                <div class="agreement">
+                    <input type="checkbox" required id="agreement" required>
+                    <label for="agreement">I would like to receive email updates from the University</label> </span>
+                </div>
+                <button>Make A Booking</button>
+                <span class="license">The information provided by you will be held by the University of Essex in accordance with the University's Data
+                protection Policy and may be used for the University's marketing purposes. On occasion we may contact you to advertise
+                events with information relevant to student recruitment. If you do not wish to receive this information, please select
+                the opt out function which can be found at the foot of your confirmation email. You will receive this email within 24
+                hours of registering.</span>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
